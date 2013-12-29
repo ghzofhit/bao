@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cleartype" content="on">
+    <meta name="author" content="GHZ.HIT" />
+    <meta name="copyright" content="GHZ.HIT Inc." />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" ref="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
+    <script type="text/javascript" src="js/data.min.js"></script>
+    <script type="text/javascript" src="js/avalon.mobile.min.js"></script>
+    <script type="text/javascript" src="js/component.js"></script>
+    <script type="text/javascript" src="js/action.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+    <link type="text/css" rel="stylesheet" href="css/buttons.css"/>
+    <link type="text/css" rel="stylesheet" href="css/go.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bao.css"/>
+ </head>
+ <body>
+ <div ms-controller="main" class="ghz-wrapper">
+ <div ms-if="navshow"   class="box info" ms-css-height="height">
+     <div ms-important="nav">
+         <div class="clearfix"><h4>按题型复习</h4></div>
+         <div ms-each="types">
+             <a href="#" ms-data-id="$index" data-type="type" ms-click="go" class="button button-rounded button-primary">{{el}}</a>
+         </div>
+         <div><h4>按主题复习</h4></div>
+         <div ms-each="subjects">
+             <a href="#" data-type="subject" ms-data-id="$index"   ms-click="go" class="button button-rounded button-primary">{{el}}</a>
+         </div>
+         <div ms-click="clear" ms-visible="!clearshow"><span href="#" class="button button-rounded button-flat hander">清空学习记录</span></div>
+         <div ms-click="confirmeclear" ms-visible="clearshow"><span href="#" class="button button-rounded button-flat hander">确认清空<span class="red">{{time}}</span>？</span></div>
+         <div class="well review-progress clearfix">
+             <div class="progress pull-right progress-danger" ms-css-width="errorwidth">
+                 <div class="bar" style="width: 100%"><span class="num">{{process.error}}</span>
+                 </div>
+             </div>
+             <div class="progress pull-left progress-reviewed " ms-css-width="goodwidth">
+                 <div class="bar reviewed pull-left" style="width: 100%;"><span class="num">{{process.good}}</span>
+                 </div>
+             </div>
+             <div class="progress pull-left progress-unreviewed" ms-css-width="unreviewedwidth">
+                 <div class="bar" style="width: 100%"><span class="num">{{process.unreviewed}}</span>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div ms-if="detailshow"  class="box info" ms-css-height="height">
+     <div ms-important="detail" >
+         <div class="detail-title"><a href="#" class="button button-pill clearfix" ms-click="main">返回</a>
+             <div>{{subtitle}}</div></div>
+         <div class="well review-progress clearfix">
+             <div class="progress pull-right progress-danger" ms-css-width="errorwidth">
+                 <div class="bar" style="width: 100%"><span class="num">{{process.error}}</span>
+                 </div>
+             </div>
+             <div class="progress pull-left progress-reviewed " ms-css-width="goodwidth">
+                 <div class="bar reviewed pull-left" style="width: 100%;"><span class="num">{{process.good}}</span>
+                 </div>
+             </div>
+             <div class="progress pull-left progress-unreviewed" ms-css-width="unreviewedwidth">
+                 <div class="bar" style="width: 100%"><span class="num">{{process.unreviewed}}</span>
+                 </div>
+             </div>
+         </div>
+         <div>
+             <div class="des-title">{{des}}</div>
+             <div class="question-title">{{question.title}}</div>
+             <div ms-with="options">
+                 <div class="answers hander" ms-data-key="$key" ms-click="check" ms-class="success:(result.indexOf($key)>=0 && shownextbutton)"><b>{{$key}}</b>.{{$val}}</div>
+             </div>
+         </div>
+         <div class="result-title hander" ms-if="showresultbutton" ms-click="showresult">看答案</div>
+         <div class="next-title hander"ms-if="shownextbutton" ms-click="next">下一题</div>
+     </div>
+ </div>
+ </div>
+ <script type="text/javascript" src="js/app.js"></script>
+ </body>
+</html>

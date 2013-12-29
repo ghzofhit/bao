@@ -1,0 +1,80 @@
+body {
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAAAVCAYAAAAeunXwAAADtUlEQVR4Xu3dMY6DUBQDwFBxa0hyYHpEQYAyF/iWPFukXb8xDbKUTC9/BAgQIECAAAECBAgQIECAwFCBfd/PeZ6noSH8cwIECBAgQIAAAQIECBAgUC6wbdvp5bz8IXA+AQIECBAgQIAAAQIECIwXMKCP70ACAgQIECBAgAABAgQIECBgQPcMECBAgAABAgQIECBAgACBAAEDekAJIhAgQIAAAQIECBAgQIBAvYABvf4RAECAAAECBAgQIECAAAECCQIG9IQWZCBAgAABAgQIECBAgACBdgEDevsT4H4CBAgQIECAAAECBAgQiBAwoEfUIAQBAgQIECBAgAABAgQIlAsY0MsfAOcTIECAAAECBAgQIECAQIaAAT2jBykIECBAgAABAgQIECBAoFvAgN7dv+sJECBAgAABAgQIECBAIETAgB5ShBgECBAgQIAAAQIECBAgUC1gQK+u3/EECBAgQIAAAQIECBAgkCJgQE9pQg4CBAgQIECAAAECBAgQaBYwoDe373YCBAgQIECAAAECBAgQiBEwoMdUIQgBAgQIECBAgAABAgQIFAs8A/r1kr4WGzidAAECBAgQIECAAAECBAgkCNzv5p+EIDIQIECAAAECBAgQIECAAIFWgeM41ntAf7cCuJsAAQIECBAgQIAAAQIECIQILFeOb0gWMQgQIECAAAECBAgQIECAQKXANaAvU+XljiZAgAABAgQIECBAgAABAkECvsI9qAxRCBAgQIAAAQIECBAgQKBWwG+g11bvcAIECBAgQIAAAQIECBBIEjCgJ7UhCwECBAgQIECAAAECBAi0ChjQW5t3NwECBAgQIECAAAECBAhECRjQo+oQhgABAgQIECBAgAABAgRKBQzopcU7mwABAgQIECBAgAABAgSyBAzoWX1IQ4AAAQIECBAgQIAAAQKdAgb0zt5dTYAAAQIECBAgQIAAAQJhAgb0sELEIUCAAAECBAgQIECAAIFKAQN6Ze2OJkCAAAECBAgQIECAAIE0AQN6WiPyECBAgAABAgQIECBAgECjgAG9sXU3EyBAgAABAgQIECBAgECcgAE9rhKBCBAgQIAAAQIECBAgQKBQwIBeWLqTCRAgQIAAAQIECBAgQCBPwICe14lEBAgQIECAAAECBAgQINAnYEDv69zFBAgQIECAAAECBAgQIBAoYEAPLEUkAgQIECBAgAABAgQIEKgTeAb0+6PucgcTIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAIE/gR9DGp+1CDmn6QAAAABJRU5ErkJggg==);
+    background-repeat: repeat repeat;
+}
+.ghz-wrapper {
+    max-width: 700px;
+    margin:0px auto;
+}
+.info {
+    background: #f4f4f4;
+}
+.box {
+    border-radius: 0.3em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #888;
+    border-color: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #444;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0 1.42857em 1.42857em ;
+    margin: 0 0 1.5em 0;
+}
+.box > *:last-child {
+    margin-bottom: 0;
+}
+body h4, h5, h6 {
+    color: #8B8F90;
+}
+.detail-title {
+    position: relative;
+}
+.detail-title div{
+    position: absolute;
+    top:0.5em;
+    left:70px;
+    width:80%;
+    max-width: 630px;
+    text-align:center;
+    color: #8B8F90;
+    font-size: 1em;
+}
+.des-title {
+    margin: 0.5em 0em;
+    color:#8B8F90;
+    font-size: 0.8em;
+}
+.question-title {
+    background-color: #ffffff;
+    padding:8px 5px;
+    font-family: "Cherry Swash", sans-serif;
+    color:#818181;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+.answers-pc:hover{
+    background-color: #ECE6E6;
+}
+.answers {
+    background-color: #ffffff;
+    padding:8px 5px;
+    font-family: "Cherry Swash", sans-serif;
+    color:#707070;
+    font-size: 0.9em;
+    margin-bottom: 1px;
+}
+.result-title,
+.next-title{
+    background-color: #1b9f86;
+    padding:8px 5px;
+    font-family: "Cherry Swash", sans-serif;
+    color:#FFFFFF;
+    font-size: 0.9em;
+    margin-top: 1em;
+    text-align:center;
+}
+.red {
+    color:#FF0000;
+}

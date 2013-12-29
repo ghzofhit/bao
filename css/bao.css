@@ -1,0 +1,91 @@
+[ms-controller],[ms-important]{
+    display:none;
+}
+.success {
+    background-color: #BAE4C4 !important;
+}
+.error {
+    background-color: #E4BABA !important;
+}
+.progress {
+    margin-bottom: 0;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.progress-unreviewed .bar {
+    background-color: #ffffff;
+    background-image: -moz-linear-gradient(top, #eeeeee, #ffffff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff);
+    background-image: -o-linear-gradient(top, #eeeeee, #ffffff);
+    background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffffffff', GradientType=0);
+    color: #289241;
+}
+.review-progress .progress .bar,
+#review-prompt-container .progress .bar {
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+.review-progress .progress-danger .bar,
+#review-prompt-container .progress-danger .bar {
+    background-color: #f89406;
+    background-image: -moz-linear-gradient(top, #f89406, #f89406);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f89406), to(#f89406));
+    background-image: -webkit-linear-gradient(top, #f89406, #f89406);
+    background-image: -o-linear-gradient(top, #f89406, #f89406);
+    background-image: linear-gradient(to bottom, #f89406, #f89406);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff89406', endColorstr='#fff89406', GradientType=0);
+
+}
+
+.review-progress .progress-reviewed .bar,
+#review-prompt-container .progress-reviewed .bar {
+    background-color: #50c1ab;
+    background-image: -moz-linear-gradient(top, #50c1ab, #50c1ab);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#50c1ab), to(#50c1ab));
+    background-image: -webkit-linear-gradient(top, #50c1ab, #50c1ab);
+    background-image: -o-linear-gradient(top, #50c1ab, #50c1ab);
+    background-image: linear-gradient(to bottom, #50c1ab, #50c1ab);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff50c1ab', endColorstr='#ff50c1ab', GradientType=0);
+}
+.review-progress {
+    margin: 0.3em 0em;
+    color:#FFFFFF;
+}
+.progress-box.bottom-progress {
+    position: absolute;
+    bottom: 10px;
+}
+.progress-box .progress-box-wrap h6 {
+    margin-top: 0px;
+}
+.progress-box .well {
+    min-height: 20px;
+    border-radius: 0;
+    background: white;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.progress-box .well .progress-unreviewed {
+    border-radius: 0;
+}
+.progress-box .well .progress-reviewed {
+    border-radius: 0;
+}
+.progress-box .well .progress-danger {
+    border-radius: 0;
+}
+.hander {
+    cursor:pointer;
+}
+
