@@ -1,0 +1,19 @@
+<div class="box info">
+    <div ms-important="nav">
+        <div class="clearfix"><h4>按题型<span ms-visible="!testmode">学习</span><span ms-visible="testmode">测试</span></h4></div>
+        <div ms-each="types">
+            <a href="#"  ms-data-id="$index" data-type="type" ms-click="go" class="button button-rounded button-primary">{{el}}</a>
+        </div>
+        <div><h4>按主题<span ms-visible="!testmode">学习</span><span ms-visible="testmode">测试</span></h4></div>
+        <div ms-each="subjects">
+            <a href="#" data-type="subject" ms-data-id="$index" ms-click="go" class="button button-rounded button-primary">{{el}}</a>
+        </div>
+
+        <div ms-click="changemode" ms-visible="!testmode"><span href="#" class="button button-rounded button-flat hander">切换到测试模式</span></div>
+        <div ms-click="changemode" ms-visible="testmode"><span href="#" class="button button-rounded button-flat hander">切换到学习模式</span></div>
+
+        <div ms-click="clear" ms-visible="!clearshow"><span href="#" class="button button-rounded button-flat hander">清空记录</span></div>
+        <div ms-click="confirmeclear" ms-visible="clearshow"><span href="#" class="button button-rounded button-flat hander">确认清空<span class="red">{{time}}</span>？</span></div>
+        <div ms-widget="mulprocessbar,mulbar" data-mulprocessbar-value="37" style="width:100%"></div>
+    </div>
+</div>

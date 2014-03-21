@@ -1,0 +1,16 @@
+<div class="box info" ms-css-height="height">
+    <div ms-important="detail" >
+        <div class="detail-title"><a href="#" class="button button-pill clearfix" ms-click="main">返回</a>
+            <div>{{subtitle}}</div></div>
+        <div ms-widget="mulprocessbar,mulbar" data-mulprocessbar-value="37" style="width:100%"></div>
+        <div>
+            <div class="des-title">{{des}}</div>
+            <div class="question-title">{{question.title}}</div>
+            <div ms-with="options">
+                <div class="answers hander" ms-data-key="$key" ms-click="check" ms-class="success:(result.indexOf($key)>=0 && shownextbutton)"><b>{{$key}}</b>.{{$val}}</div>
+            </div>
+        </div>
+        <div class="result-title hander" ms-if="showresultbutton" ms-click="showresult">看答案</div>
+        <div class="next-title hander"ms-if="shownextbutton" ms-click="show">下一题</div>
+    </div>
+</div>
